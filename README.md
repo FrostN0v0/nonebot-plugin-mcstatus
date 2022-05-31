@@ -1,39 +1,18 @@
-# Nonebot Plugin MCStatus
+### 本仓库Fork自[Nonebot Plugin MCStatus](https://github.com/nonepkg/nonebot-plugin-mcstatus)
 
 基于 [nonebot2](https://github.com/nonebot/nonebot2) 和 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp) 的 Minecraft 服务器状态查询插件
 
-[![License](https://img.shields.io/github/license/Jigsaw111/nonebot_plugin_mcstatus)](LICENSE)
-![Python Version](https://img.shields.io/badge/python-3.7.3+-blue.svg)
-![NoneBot Version](https://img.shields.io/badge/nonebot-2.0.0a11+-red.svg)
-![Pypi Version](https://img.shields.io/pypi/v/nonebot-plugin-mcstatus.svg)
+修改了消息反馈形式，查询到的状态将以图片返回
+能够返回玩家列表、在线人数、MOTD信息、服务器图标以及Ping值
+部分信息返回需要在服务端server.properties文件中开启服务器query功能
+- `enable-query=true` 开启query功能
+- `query.port=25565` query端口（默认即可无需调整）
 
 ### 安装
 
-#### 从 PyPI 安装（推荐）
+#### 克隆此仓库至Nonebot生成的`plugins`文件夹中
 
-- 使用 nb-cli  
-
-```
-nb plugin install nonebot_plugin_mcstatus
-```
-
-- 使用 poetry
-
-```
-poetry add nonebot_plugin_mcstatus
-```
-
-- 使用 pip
-
-```
-pip install nonebot_plugin_mcstatus
-```
-
-#### 从 GitHub 安装（不推荐）
-
-```
-git clone https://github.com/Jigsaw111/nonebot_plugin_mcstatus.git
-```
+`git clone https://github.com/FrostN0v0/nonebot_plugin_mcstatus.git`
 
 ### 使用
 
@@ -43,9 +22,5 @@ git clone https://github.com/Jigsaw111/nonebot_plugin_mcstatus.git
 - `mc add server address` 添加服务器到当前会话（群/私聊）的关注服务器列表
 - `mc remove server` 从当前会话（群/私聊）的关注服务器列表移除服务器
 - `mc check address` 查看指定地址的服务器状态（一次性）
+- `mc ping <name>` 检查对应服务器的状态
 
-### Bug
-
-### To Do
-
-### Changelog
