@@ -14,6 +14,9 @@ mc_parser = ArgumentParser("mc")
 
 subparsers = mc_parser.add_subparsers(dest="handle")
 
+p = subparsers.add_parser("p", help="check server once")
+p.add_argument("name")
+
 check = subparsers.add_parser("check", help="check server once")
 check.add_argument("address")
 
