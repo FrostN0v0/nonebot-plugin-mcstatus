@@ -24,5 +24,5 @@
 - `mc add server address` 添加服务器到当前会话（群/私聊）的关注服务器列表
 - `mc remove server` 从当前会话（群/私聊）的关注服务器列表移除服务器
 - `mc check address` 查看指定地址的服务器状态（一次性）
-- `mc ping <name>` 检查对应服务器的状态
+- `mc p <name>` 检查对应服务器的状态
 
